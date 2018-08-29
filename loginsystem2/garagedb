@@ -1,0 +1,24 @@
+theoretical garage DB  
+
+DROP TABLE IF EXISTS `garage`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `garage` (
+  `id` int(11) NOT NULL auto_increment,
+  `car` varchar(255) NOT NULL default '',
+  `value` int(11) NOT NULL default '0',
+  `owner` varchar(255) NOT NULL default '',
+  `mph` int(255) NOT NULL default '0',
+  `damage` int(11) NOT NULL default '0',
+  `transmission` int(45) NOT NULL default '0',
+  `engine` int(45) NOT NULL default '0',
+  `supercharger` int(45) NOT NULL default '0',
+  `suspension` int(45) NOT NULL default '0',
+  `brakes` int(45) NOT NULL default '0',
+  `Weight` int(45) NOT NULL default '0',
+  `nos` int(45) NOT NULL default '0',
+  `bodykit` int(255) NOT NULL default '0',
+  `interior` int(11) NOT NULL default '0',
+  `stereo` int(45) NOT NULL default '0',
+  `spoilers` int(45) NOT NULL default '0',
+  `class` enum('Street','Drift','Drag','Circuit') NOT NULL 
